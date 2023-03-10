@@ -1,9 +1,8 @@
 import styles from './Add.module.scss';
+import PostForm from "../../features/PostForm";
 const Add = () => {
     return (
-        <div>
-            <h1>Add</h1>
-        </div>
+        <PostForm />
     )
 }
 export default Add;
