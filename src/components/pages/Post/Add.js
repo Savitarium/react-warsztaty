@@ -1,8 +1,10 @@
 import styles from './Add.module.scss';
-import PostForm from "../../features/PostForm";
+import AddPostForm from "../../features/AddPostForm";
 const Add = () => {
     return (
-        <PostForm />
+        <section className="w-75 mx-auto">
+            <AddPostForm />
+        </section>
     )
 }
 export default Add;
