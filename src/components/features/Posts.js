@@ -4,6 +4,7 @@ import {Button, Card} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
+import {dateToString} from "../../Utils/dateToStr";
 
 const Posts = () => {
     const posts = useSelector(getAllPosts);
@@ -29,7 +30,7 @@ const Posts = () => {
                                 </Card.Title>
                                 <Card.Text>
                                     <p className="my-0 py-0"><strong>Author:</strong> {post.author}</p>
-                                    <p className="my-0 py-0"><strong>Published</strong> {post.publishedDate}</p>
+                                    <p className="my-0 py-0"><strong>Published</strong> {dateToString(post.publishedDate)}</p>
                                 </Card.Text>
                                 <Card.Text><p>{post.shortDescription}</p></Card.Text>
                                 <Link to={`/post/${post.id}`}>

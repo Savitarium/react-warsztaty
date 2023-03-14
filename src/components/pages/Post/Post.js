@@ -5,6 +5,7 @@ import {getPostById} from "../../../redux/postsRedux";
 import {Row, Col, Button, Modal} from "react-bootstrap";
 import {useState} from "react";
 import {removePost} from "../../../redux/postsRedux";
+import {dateToString} from "../../../Utils/dateToStr";
 
 const Post = () => {
     const {id} = useParams();
@@ -52,12 +53,12 @@ const Post = () => {
             <Row className="py-3">
                 <Col>
                     <p className="my-0 py-0"><strong>Author: </strong>{postData.author}</p>
-                    <p className="my-0 py-0"><strong>Published: </strong>{postData.publishedDate}</p>
+                    <p className="my-0 py-0"><strong>Published: </strong>{dateToString(postData.publishedDate)}</p>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <p>{postData.content}</p>
+                    <p dangerouslySetInnerHTML={{ __html: postData.content }} />
                 </Col>
             </Row>
         </section>
