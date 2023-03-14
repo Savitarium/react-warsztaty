@@ -1,1 +1,1 @@
-https://react-warsztaty-1.nadarvlkan.repl.co
+https://react-warsztaty.nadarvlkan.repl.co/
