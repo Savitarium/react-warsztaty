@@ -30,7 +30,8 @@ const Posts = () => {
                                 </Card.Title>
                                 <Card.Text>
                                     <p className="my-0 py-0"><strong>Author:</strong> {post.author}</p>
-                                    <p className="my-0 py-0"><strong>Published</strong> {dateToString(post.publishedDate)}</p>
+                                    <p className="my-0 py-0"><strong>Published:</strong> {dateToString(post.publishedDate)}</p>
+                                    <p className="my-0 py-0"><strong>Category: </strong> {post.category}</p>
                                 </Card.Text>
                                 <Card.Text><p>{post.shortDescription}</p></Card.Text>
                                 <Link to={`/post/${post.id}`}>

@@ -6,7 +6,8 @@ const initialState = {
             shortDescription: 'Short description of the article...',
             content: 'Main content of the article',
             publishedDate: new Date('02-02-2022'),
-            author: 'John Doe'
+            author: 'John Doe',
+            category: 'Movies',
         },
         {
             id: '2',
@@ -14,7 +15,8 @@ const initialState = {
             shortDescription: 'Short description of the article... 2',
             content: 'Main content of the article 2',
             publishedDate: new Date('02-03-2022'),
-            author: 'John Doe'
+            author: 'John Doe',
+            category: 'Sport'
         },
         {
             id: '3',
@@ -22,7 +24,8 @@ const initialState = {
             shortDescription: 'Short description of the article... 3',
             content: 'Main content of the article 3',
             publishedDate: new Date('02-04-2022'),
-            author: 'John Doe'
+            author: 'John Doe',
+            category: 'News'
         },
         {
             id: '4',
@@ -30,7 +33,8 @@ const initialState = {
             shortDescription: 'Short description of the article... 4',
             content: 'Main content of the article 4',
             publishedDate: new Date('02-05-2022'),
-            author: 'John Doe'
+            author: 'John Doe',
+            category: 'News'
         },
     ],
 };

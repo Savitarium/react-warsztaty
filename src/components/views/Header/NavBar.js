@@ -10,6 +10,7 @@ const NavBar = () => {
             </Nav>
             <Nav className="justify-content-end mx-4">
                 <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+                <Nav.Link as={NavLink} to="/category">Category</Nav.Link>
                 <Nav.Link as={NavLink} to="/about">About</Nav.Link>
             </Nav>
         </Navbar>

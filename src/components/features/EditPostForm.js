@@ -6,7 +6,7 @@ const EditPostForm = (props) => {
     const {id} = useParams();
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    console.log(props);
+    console.log('props z editpostform ', props);
     const handleSubmit = post => {
         dispatch(editPost({ ...post, id }));
         navigate('/')
@@ -20,6 +20,8 @@ const EditPostForm = (props) => {
             publishedDate={props.publishedDate}
             shortDescription={props.shortDescription}
             content={props.content}
+            id={id}
+            categoryName={props.category}
         />
     )
 }

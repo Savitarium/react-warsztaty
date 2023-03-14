@@ -1,4 +1,3 @@
-import styles from './Post.module.scss';
 import {useDispatch, useSelector} from "react-redux";
 import {Link, Navigate, useParams} from "react-router-dom";
 import {getPostById} from "../../../redux/postsRedux";
@@ -54,6 +53,7 @@ const Post = () => {
                 <Col>
                     <p className="my-0 py-0"><strong>Author: </strong>{postData.author}</p>
                     <p className="my-0 py-0"><strong>Published: </strong>{dateToString(postData.publishedDate)}</p>
+                    <p className="my-0 py-0"><strong>Category: </strong> {postData.category}</p>
                 </Col>
             </Row>
             <Row>

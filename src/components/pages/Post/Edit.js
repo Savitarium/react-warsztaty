@@ -7,6 +7,7 @@ import {dateToString} from "../../../Utils/dateToStr";
 const Edit = () => {
     const {id} = useParams();
     const postData = useSelector(state => getPostById(state, id));
+    console.log(postData);
     if(!postData) return <Navigate to="/" />
     return (
         <section className="w-75 mx-auto">
@@ -14,7 +15,9 @@ const Edit = () => {
                           author={postData.author}
                           publishedDate={dateToString(postData.publishedDate)}
                           shortDescription={postData.shortDescription}
-                          content={postData.content}/>
+                          content={postData.content}
+                          category={postData.category}
+            />
         </section>
     )
 }
